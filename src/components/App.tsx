@@ -5,7 +5,7 @@ import { AppProvider } from '../AppContext'
 function App() {
     return (
         <>
-            <AppProvider>
+               <AppProvider>
                 <MainContainer>
                     <Header />
                 </MainContainer>
