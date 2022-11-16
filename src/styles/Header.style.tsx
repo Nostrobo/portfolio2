@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const Logo = styled.img`
-    width : 80px;
+    width: 80px;
 `
 
 export const HeaderContainer = styled.div`

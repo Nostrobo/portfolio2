@@ -1,6 +1,6 @@
-import React, { PropsWithChildren, useContext, useReducer } from "react"
-import { initialState, reducer } from "./Reducers/Reducer";
-import { InitialStateType } from "./types/types";
+import React, { PropsWithChildren, useContext, useReducer } from 'react'
+import { initialState, reducer } from './Reducers/Reducer'
+import { InitialStateType } from './types/types'
 
 const AppContext = React.createContext<InitialStateType>(initialState)
 
@@ -19,24 +19,19 @@ const AppProvider: React.FC<PropsWithChildren> = ({ children }) => {
         navOpen: state.navOpen,
         dispatch: dispatch,
         CtxToggleNavOpen,
-        CtxFireAnimation
+        CtxFireAnimation,
     }
 
-    return (
-        <AppContext.Provider value={value}>
-            {children}
-        </AppContext.Provider>
-    )
+    return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }
 
 export default function useAppContext() {
     const context = useContext(AppContext)
 
     if (!context) {
-        throw new Error("appcontext not available")
+        throw new Error('appcontext not available')
     }
-    return context;
+    return context
 }
 
-export { AppContext, AppProvider };
-
+export { AppContext, AppProvider }
