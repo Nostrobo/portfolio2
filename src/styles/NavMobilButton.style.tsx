@@ -6,10 +6,12 @@ export const NavButton = styled.button`
     width: 80px;
     background-color: transparent;
     border: none;
+    z-index: 9999;
 `
 
 export const NavButtonIcon = styled(FontAwesomeIcon)<NavButtonIconProps>`
     transition: 0.3s ease;
     rotate: ${(props) => (props.fireanimation ? '0deg' : '180deg')};
     opacity: ${(props) => (props.fireanimation ? '1' : '0')};
+    color: ${(props) => (props.navOpen ? 'white' : 'black')};
 `

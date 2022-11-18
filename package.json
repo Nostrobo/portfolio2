@@ -47,10 +47,12 @@
         ]
     },
     "devDependencies": {
+        "@types/react-router-hash-link": "^2.4.5",
         "@types/styled-components": "^5.1.26",
         "husky": "^8.0.2",
         "lint-staged": "^13.0.3",
-        "prettier": "2.7.1"
+        "prettier": "2.7.1",
+        "react-router-hash-link": "^2.4.3"
     },
     "lint-staged": {
         "*": "prettier --write ."

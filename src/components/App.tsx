@@ -1,14 +1,11 @@
-import Header from './Header'
-import { MainContainer } from '../styles/App.style'
+import AppContainer from './AppContainer'
 import { AppProvider } from '../AppContext'
 
 function App() {
     return (
         <>
             <AppProvider>
-                <MainContainer>
-                    <Header />
-                </MainContainer>
+                <AppContainer />
             </AppProvider>
         </>
     )

@@ -18,4 +18,13 @@ export interface InitialStateType {
 
 export type NavButtonIconProps = {
     fireanimation: boolean
+    navOpen: boolean
+}
+
+export type LogoType = {
+    navOpen: boolean
+}
+
+export type NavContainerType = {
+    navOpen: boolean
 }

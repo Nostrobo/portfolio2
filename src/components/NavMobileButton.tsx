@@ -22,12 +22,14 @@ const NavMobileButton: React.FC = () => {
                         size="3x"
                         icon={faBars}
                         fireanimation={!fireAnimation}
+                        navOpen={navOpen}
                     />
                 ) : (
                     <NavButtonIcon
                         size="3x"
                         icon={faXmark}
                         fireanimation={fireAnimation}
+                        navOpen={navOpen}
                     />
                 )}
             </NavButton>
