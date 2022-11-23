@@ -33,3 +33,7 @@ export type MousePositionType = {
     x: number
     y: number
 }
+
+export type CardAnimationType = {
+    showCardInfo: boolean
+}
