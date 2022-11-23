@@ -10,5 +10,3 @@ export const HeaderContainer = styled.div`
     display: flex;
     justify-content: space-between;
 `
-
-// color:${(props) => (props.navOpen ? 'white' : 'black')};

@@ -4,6 +4,8 @@ import { MainContainer } from '../styles/App.style'
 import React from 'react'
 import useAppContext from '../AppContext'
 import Home from './Home'
+import About from './About'
+import Work from './Work'
 
 const AppContainer: React.FC = () => {
     const { navOpen } = useAppContext()
@@ -18,6 +20,8 @@ const AppContainer: React.FC = () => {
             <MainContainer>
                 <Header />
                 <Home />
+                <About />
+                <Work />
             </MainContainer>
         </>
     )

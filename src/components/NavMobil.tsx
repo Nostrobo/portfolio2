@@ -8,8 +8,8 @@ const NavMobil: React.FC = () => {
     return (
         <NavContainer navOpen={navOpen}>
             <NavLink to="/pathLink#home">HOME</NavLink>
-            <NavLink to="/pathLink#work">MY WORK</NavLink>
             <NavLink to="/pathLink#about">ABOUT ME</NavLink>
+            <NavLink to="/pathLink#work">MY WORK</NavLink>
             <NavLink to="/pathLink#contact">CONTACT</NavLink>
         </NavContainer>
     )

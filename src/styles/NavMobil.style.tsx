@@ -25,7 +25,12 @@ export const NavContainer = styled.div<NavContainerType>`
 
 export const NavLink = styled(Link)`
     width: 40%;
-    background-color: white;
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 55%,
+        rgba(230, 230, 230, 1) 100%
+    );
     color: black;
     text-align: center;
     text-decoration: none;

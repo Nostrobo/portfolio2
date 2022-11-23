@@ -28,3 +28,8 @@ export type LogoType = {
 export type NavContainerType = {
     navOpen: boolean
 }
+
+export type MousePositionType = {
+    x: number
+    y: number
+}
