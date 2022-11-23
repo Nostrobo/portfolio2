@@ -4,7 +4,7 @@ import { NavContainerType } from '../types/types'
 
 export const NavContainer = styled.div<NavContainerType>`
     transition: .3s;
-    position : absolute;
+    position : fixed;
     width:100%
     height : 100vh;
     top: 0;

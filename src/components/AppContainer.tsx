@@ -6,6 +6,7 @@ import useAppContext from '../AppContext'
 import Home from './Home'
 import About from './About'
 import Work from './Work'
+import Contact from './Contact'
 
 const AppContainer: React.FC = () => {
     const { navOpen } = useAppContext()
@@ -22,6 +23,7 @@ const AppContainer: React.FC = () => {
                 <Home />
                 <About />
                 <Work />
+                <Contact />
             </MainContainer>
         </>
     )

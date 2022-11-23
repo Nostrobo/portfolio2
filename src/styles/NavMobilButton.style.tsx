@@ -7,6 +7,9 @@ export const NavButton = styled.button`
     background-color: transparent;
     border: none;
     z-index: 9999;
+    position: fixed;
+    right: 10px;
+    top: 30px;
 `
 
 export const NavButtonIcon = styled(FontAwesomeIcon)<NavButtonIconProps>`

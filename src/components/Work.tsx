@@ -12,7 +12,7 @@ const JobCardContainer = styled.div`
 const Work: React.FC = () => {
     return (
         <section id="work">
-            <Title id="title3" text="MY WORK" />
+            <Title id="title4" text="MY WORK" />
             <JobCardContainer>
                 <JobCard />
                 <JobCard />

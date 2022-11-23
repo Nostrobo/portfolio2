@@ -1,8 +1,8 @@
-import SubTitle from './SubTitle'
+import Title from './Title'
 const About = () => {
     return (
         <section id="about">
-            <SubTitle text="WHO AM I?" />
+            <Title id="title3" text="ABOUT ME" />
         </section>
     )
 }
