@@ -12,28 +12,40 @@ const Title: React.FC<{ text: string; id: string }> = ({
     })
 
     useEffect(() => {
-        let elem: HTMLElement | null = document.getElementById(id)
-        let elemPosition: DOMRect
-        if (elem) {
-            elemPosition = elem.getBoundingClientRect()
+        let offset = {
+            x: 0,
+            y: 0,
+        }
+
+        if (window.visualViewport) {
+            offset = {
+                x: window.visualViewport.width / 2,
+                y: window.visualViewport.height / 2,
+            }
         }
         window.addEventListener('mousemove', (e) => {
-            getMouseValues(e, elemPosition)
+            getMouseValues(e, offset)
         })
         return () =>
             window.removeEventListener('mousemove', (e) => {
-                getMouseValues(e, elemPosition)
+                getMouseValues(e, offset)
             })
     }, [])
 
-    const getMouseValues = (e: MouseEvent, elemPosition: DOMRect) => {
+    const getMouseValues = (
+        e: MouseEvent,
+        offset: {
+            x: number
+            y: number
+        }
+    ) => {
         setMousePosition({
-            x: e.clientX - elemPosition.x,
-            y: e.clientY - elemPosition.y,
+            x: e.clientX - offset.x,
+            y: e.clientY - offset.y,
         })
     }
     return (
-        <StyledTitle id={id} x={mousePosition.x} y={mousePosition.y}>
+        <StyledTitle id={id} {...mousePosition}>
             {text}
         </StyledTitle>
     )
