@@ -3,7 +3,7 @@ import { MousePositionType } from '../types/types'
 
 export const StyledTitle = styled.p.attrs<MousePositionType>((props) => ({
     style: {
-        boxShadow: `${-props.x / 10}px  ${-props.y / 10}px 1px black`,
+        boxShadow: `${-props.x / 20}px  ${-props.y / 20}px 0px black`,
         transform: `rotateY(${props.x / 25}deg)
                     rotateX(${-props.y / 25}deg)
                     translateX(${-props.x / 50}px)
@@ -24,7 +24,7 @@ export const StyledTitle = styled.p.attrs<MousePositionType>((props) => ({
     padding: 0px 32px;
     margin: 16px;
         black;
-    border: 2px solid white;
+    border: 1px solid white;
     text-align: center;
 
 `

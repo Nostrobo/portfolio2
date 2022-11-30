@@ -37,3 +37,14 @@ export type MousePositionType = {
 export type CardAnimationType = {
     showCardInfo: boolean
 }
+
+export type MailType = {
+    name: string
+    mail: string
+    phone: string
+    message: string
+}
+
+export type FormButtonType = {
+    disableButton: boolean
+}

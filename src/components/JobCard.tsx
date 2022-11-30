@@ -10,7 +10,6 @@ import {
 
 const JobCard: React.FC = () => {
     const [showCardInfo, setShowCardInfo] = useState(false)
-    console.log('🚀 ~ file: JobCard.tsx ~ line 24 ~ showCardInfo', showCardInfo)
 
     return (
         <CardMainContainer>
